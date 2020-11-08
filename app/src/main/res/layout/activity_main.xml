@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/logo"
+
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:ems="6"
+        android:textSize="40dp"
+        android:textColor="	#FF4500"
+        android:textStyle="bold|italic"
+        android:text="BMI " />
+
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="300dp"
+        android:ems="6"
+        android:textSize="40dp"
+        android:layout_alignLeft="@id/textView"
+        android:textColor="	#FF4500"
+        android:textStyle="bold|italic"
+        android:text="Test " />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:ems="6"
+        android:textSize="40dp"
+        android:textColor="?attr/colorSecondaryVariant"
+        android:textStyle="bold|italic"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginTop="100dp"
+        android:drawablePadding="2dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="?android:attr/colorMultiSelectHighlight"
+        android:text="" android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:ems="6"
+        android:textSize="40dp"
+        android:textColor="?attr/colorSecondaryVariant"
+        android:textStyle="bold|italic"
+
+        android:layout_below="@id/edittext1"
+        android:text="Height" />
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="2dp"
+        android:ems="10"
+        android:layout_below="@id/textView2"
+        android:text="" android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:ems="6"
+        android:textSize="40dp"
+        android:textColor="?attr/colorSecondaryVariant"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/edittext2"
+        android:text="Weight" />
+
+    <EditText
+        android:id="@+id/edittext3"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="2dp"
+        android:ems="10"
+        android:layout_below="@id/textView3"
+        android:text="" android:inputType="text" />
+
+
+
+    <Spinner
+        android:id="@+id/genderspinner"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:layout_alignLeft="@id/chk"
+
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="500dp"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/save1"
+        android:layout_below="@id/chk"
+        android:background="@color/white"
+       android:textStyle="italic"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:onClick="savebtn"
+
+
+
+
+
+        />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:id="@+id/bmi"
+        android:layout_below="@id/chk"
+        android:layout_toRightOf="@id/save1"
+        android:background="@color/white"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:onClick="Calculate_BMI"
+
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next1"
+        android:layout_below="@id/chk"
+        android:layout_toRightOf="@id/bmi"
+        android:background="@color/white"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+
+        android:onClick="openManinActivity2"
+
+        />
+
+    <EditText
+        android:id="@+id/edittext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="2dp"
+        android:ems="7"
+        android:layout_below="@id/bmi"
+        android:text="" android:inputType="text"
+        android:layout_marginLeft="150dp"
+        />
+
+    <CheckBox android:id="@+id/chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remainder Me"
+        android:layout_marginTop="550dp"
+        android:textStyle="bold"
+       />
+
+
+
+</RelativeLayout>
